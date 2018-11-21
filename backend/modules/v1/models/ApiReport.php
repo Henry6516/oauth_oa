@@ -21,7 +21,7 @@ class ApiReport
 
     public static function getSalesReport($condition)
     {
-        $sql = 'Z_P_FinancialProfit @pingtai=:plat,@DateFlag=:dateFlag,@BeginDate=:beginDate,@endDate=:endDate,'.
+        $sql = 'henry_test_11_20 @pingtai=:plat,@DateFlag=:dateFlag,@BeginDate=:beginDate,@endDate=:endDate,'.
         '@SalerAliasName=:suffix,@Saler=:seller,@StoreName=:storeName,@RateFlag=0';
         $cache = 'oauth_saleProfit @pingtai=:plat,@DateFlag=:dateFlag,@SalerAliasName=:suffix,@Saler=:seller,'.
             '@StoreName=:storeName,@DateRangeType=:dateRangeType';
