@@ -886,6 +886,25 @@
 }
 ```
 
+## 异常paypal
+* 接口名称：异常paypal列表
+* 请求方法：post
+* 请求示例：v1/tiny-tool/exception-pay-pal
+* 请求参数：beginDate 和 endDate 同时为空则返回全部数据
+```json
+{
+  "condition":{
+    "beginDate":"2018-10-01",
+    "endDate":"2018-11-23"
+  }
+}
+```
+## 风险订单
+* 接口名称：风险订单
+* 请求方法：get
+* 请求示例：v1/tiny-tool/risky-order
+
+
 
 # v1/requirement 需求管理
 

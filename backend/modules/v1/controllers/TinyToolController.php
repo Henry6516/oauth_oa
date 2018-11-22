@@ -284,6 +284,21 @@ class TinyToolController extends AdminController
         return $data;
     }
 
+    /**
+     * @brief display exception payPal
+     * @return array
+     * @throws \yii\db\Exception
+     */
+    public function actionExceptionPayPal()
+    {
+        $request = Yii::$app->request->post();
+        $cond = $request['condition'];
+        return ApiTinyTool::getExceptionPayPal($cond);
+    }
 
+    public function actionRiskyOrder()
+    {
+        return ApiTinyTool::getRiskyOrder();
+    }
 
 }
